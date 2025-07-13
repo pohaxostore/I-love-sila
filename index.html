@@ -16,8 +16,9 @@
             color: #e63946;
         }
         p {
-            font-size: 1.5em;
+            font-size: 1.3em;
             color: #1d3557;
+            margin-bottom: 20px;
         }
         .gift-button {
             background-color: #ffb3b3;
@@ -33,36 +34,34 @@
             background-color: #e63946;
             color: white;
         }
-        .fireworks {
+        .gift-message {
+            font-size: 1.5em;
+            color: #e63946;
             display: none;
-            margin-top: 20px;
-        }
-        .fireworks img {
-            width: 100px;
-            height: auto;
-            animation: explode 1s infinite;
-        }
-        @keyframes explode {
-            0% { transform: scale(0); }
-            100% { transform: scale(1); }
+            margin-top: 30px;
         }
     </style>
 </head>
 <body>
     <h1>هدية لسيلا</h1>
-    <p>أنتِ شخص مميز جداً بالنسبة لي!</p>
-    <button class="gift-button" onclick="showFireworks()">اضغط هنا لسيلا</button>
-    <div class="fireworks">
-        <img src="https://www.w3schools.com/html/img_girl.jpg" alt="مفرقعات" />
-        <img src="https://www.w3schools.com/html/img_girl.jpg" alt="مفرقعات" />
-        <img src="https://www.w3schools.com/html/img_girl.jpg" alt="مفرقعات" />
+    <p>
+        سيلا، أنتِ أروع شخص قابلته في حياتي، وجودك في حياتي يجعل كل شيء يبدو أفضل.  
+        أحتاج إلى كلمات أكثر ولكن لا أستطيع التعبير عن مدى حبي لكِ.  
+        أنتِ لستِ مجرد شخص عادي، أنتِ الأمل والفرح في حياتي.  
+        حينما أكون معكِ، كل شيء حولي يصبح جميلاً.  
+        أنتِ مصدر إلهامي، وأنتِ السبب في سعادتي.  
+        لا أستطيع تصور حياتي بدونك، وأتمنى أن أكون معكِ إلى الأبد.  
+        هذا النص هو مجرد بداية، ولا يمكنني إحصاء كل الكلمات التي أريد قولها لكِ.
+    </p>
+    <button class="gift-button" onclick="showMessage()">اضغط هنا لسيلا</button>
+    <div class="gift-message">
+        <p>"9awdi roghdi"</p>
     </div>
-    <p>"9awdi roghdi"</p>
 
     <script>
-        function showFireworks() {
-            var fireworks = document.querySelector('.fireworks');
-            fireworks.style.display = 'block';
+        function showMessage() {
+            var giftMessage = document.querySelector('.gift-message');
+            giftMessage.style.display = 'block';
         }
     </script>
 </body>
